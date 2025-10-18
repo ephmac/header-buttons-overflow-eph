@@ -12,5 +12,8 @@
   "hbo.i": "e",
   "hbo.ustawieniaHBO": "Configurações dos botões de cabeçalho",
   "hbo.ustawieniaPodpowiedz": "Escolhe como os botões de cabeçalho de atores e itens devem ser exibidos",
-  "hbo.odswiezOkna": "As alterações serão visíveis após reabrir as janelas"
+  "hbo.odswiezOkna": "As alterações serão visíveis após reabrir as janelas",
+  "hbo.System": "Sistema",
+  "hbo.modulWylaczony": "MÓDULO DESATIVADO",
+  "hbo.modulWylaczony2": "o módulo não funciona neste sistema. Você pode desativá-lo completamente."
 }

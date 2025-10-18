@@ -1,9 +1,63 @@
-import "./ustawienia.js";
+const CZARNA_LISTA = new Set(["dnd5e", "wfrp4e"]);
+
+let idSystemu;
+let nazwaSystemu;
+let BLOKADA = false
 
 const STAN_NAGLOWKA = new WeakMap();
 
+const DOMYSLNE = {
+  aktorzy: {
+    przyciski: "10",
+    zamknij: "1"
+  },
+  przedmioty: {
+    przyciski: "10",
+    zamknij: "1"
+  }
+};
+ 
+
+Hooks.once("init", () => {
+  idSystemu = game.system.id;
+  nazwaSystemu = game.system.title;
+  if(CZARNA_LISTA.has(idSystemu)) BLOKADA = true;
+
+  game.settings.register("header-buttons-overflow-eph", "przyciski", {
+    scope: "world",
+    config: false,
+    type: Object,
+    default: foundry.utils.deepClone(DOMYSLNE)
+  });
+});
+
+
+Hooks.once("ready", async () => {
+  if (BLOKADA) {
+
+    const hint = game.i18n.localize("hbo.System") + ": " + nazwaSystemu + " - " + game.i18n.localize("hbo.modulWylaczony2")
+
+    game.settings.register("header-buttons-overflow-eph", "disabledInfo", {
+      name: game.i18n.localize("hbo.modulWylaczony"),
+      hint: hint,
+      scope: "world",
+      config: true,
+      type: Boolean,
+      default: true,
+      restricted: true,
+      requiresReload: false,
+      onChange: () => {}
+    });
+
+    return;
+  }
+
+  await import("./ustawienia.js");
+});
+
 
 Hooks.on("renderActorSheet", (_app, html) => {
+  if(BLOKADA) return;
 
   const root   = html?.[0] ?? html;
   const header = root?.querySelector(".app .header-actions, .window-header");
@@ -50,6 +104,7 @@ Hooks.on("renderActorSheet", (_app, html) => {
 });
 
 Hooks.on("renderItemSheet", (_app, html) => {
+  if(BLOKADA) return;
 
   const root   = html?.[0] ?? html;
   const header = root?.querySelector(".app .header-actions, .window-header");
@@ -64,11 +119,11 @@ Hooks.on("renderItemSheet", (_app, html) => {
   const doPominiecia = new Set([przyciskZamknij, przyciskUUID].filter(Boolean));
 
   // ZAMKNIJ
-  const ustawieniaPrzedmiotyZamknij = game.settings.get("header-buttons-overflow-eph", "przyciski").aktorzy.zamknij;
+  const ustawieniaPrzedmiotyZamknij = game.settings.get("header-buttons-overflow-eph", "przyciski").przedmioty.zamknij;
   if (ustawieniaPrzedmiotyZamknij === "1") if(przyciskZamknij) ikonizacja(przyciskZamknij);
 
   // RESZTA
-  const ustawieniaPrzedmiotyPrzyciski =  game.settings.get("header-buttons-overflow-eph", "przyciski").aktorzy.przyciski;
+  const ustawieniaPrzedmiotyPrzyciski =  game.settings.get("header-buttons-overflow-eph", "przyciski").przedmioty.przyciski;
   switch (ustawieniaPrzedmiotyPrzyciski) {
     case "21": {
       zbudujListe(html, doPominiecia);

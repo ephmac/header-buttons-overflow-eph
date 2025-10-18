@@ -12,5 +12,8 @@
   "hbo.i": "y",
   "hbo.ustawieniaHBO": "Configuración de botones de encabezado",
   "hbo.ustawieniaPodpowiedz": "Elige cómo se mostrarán los botones de encabezado de actores y objetos",
-  "hbo.odswiezOkna": "Los cambios serán visibles después de volver a abrir las ventanas"
+  "hbo.odswiezOkna": "Los cambios serán visibles después de volver a abrir las ventanas",
+  "hbo.System": "Sistema",
+  "hbo.modulWylaczony": "MÓDULO DESACTIVADO",
+  "hbo.modulWylaczony2": "el módulo no funciona en este sistema. Puedes desactivarlo completamente."
 }

@@ -12,5 +12,8 @@
   "hbo.i": "と",
   "hbo.ustawieniaHBO": "ヘッダーボタンの設定",
   "hbo.ustawieniaPodpowiedz": "アクターとアイテムのヘッダーボタンの表示方法を選択してください",
-  "hbo.odswiezOkna": "ウィンドウを再度開くと変更が反映されます"
+  "hbo.odswiezOkna": "ウィンドウを再度開くと変更が反映されます",
+  "hbo.System": "システム",
+  "hbo.modulWylaczony": "モジュール無効",
+  "hbo.modulWylaczony2": "このシステムではモジュールは動作しません。完全に無効にすることができます。"
 }

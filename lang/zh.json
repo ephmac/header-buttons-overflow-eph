@@ -12,5 +12,8 @@
   "hbo.i": "和",
   "hbo.ustawieniaHBO": "标题按钮设置",
   "hbo.ustawieniaPodpowiedz": "选择角色和物品的标题按钮显示方式",
-  "hbo.odswiezOkna": "重新打开窗口后更改将生效"
+  "hbo.odswiezOkna": "重新打开窗口后更改将生效",
+  "hbo.System": "系统",
+  "hbo.modulWylaczony": "模块已禁用",
+  "hbo.modulWylaczony2": "此模块在该系统中无法运行。您可以将其完全禁用。"
 }

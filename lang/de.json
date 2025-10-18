@@ -12,5 +12,8 @@
   "hbo.i": "und",
   "hbo.ustawieniaHBO": "Kopfzeilen-Schaltflächen Einstellungen",
   "hbo.ustawieniaPodpowiedz": "Wähle, wie die Kopfzeilen-Schaltflächen für Akteure und Gegenstände angezeigt werden sollen",
-  "hbo.odswiezOkna": "Änderungen werden nach dem erneuten Öffnen der Fenster sichtbar"
+  "hbo.odswiezOkna": "Änderungen werden nach dem erneuten Öffnen der Fenster sichtbar",
+  "hbo.System": "System",
+  "hbo.modulWylaczony": "MODUL DEAKTIVIERT",
+  "hbo.modulWylaczony2": "das Modul funktioniert in diesem System nicht. Du kannst es vollständig deaktivieren."
 }

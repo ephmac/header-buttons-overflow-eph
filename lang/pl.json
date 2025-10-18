@@ -12,5 +12,8 @@
   "hbo.i": "i",
   "hbo.ustawieniaHBO": "Ustawienia przycisków nagłówków",
   "hbo.ustawieniaPodpowiedz": "Wybierz jak mają wyświetlać się przyciski nagłówków aktorów i przedmiotów",
-  "hbo.odswiezOkna": "Efekty będą widoczne po ponownym otwarciu okien"
+  "hbo.odswiezOkna": "Efekty będą widoczne po ponownym otwarciu okien",
+  "hbo.System": "System",
+  "hbo.modulWylaczony": "MODUŁ WYŁĄCZONY",
+  "hbo.modulWylaczony2": "moduł nie działa w tym systemie. Możesz go całekiem wyłączyć."
 }

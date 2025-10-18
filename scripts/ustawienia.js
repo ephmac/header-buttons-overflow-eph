@@ -3,16 +3,6 @@ import { otworzDialogWsparcia } from "./dialog_wsparcie.js";
 const NS = "header-buttons-overflow-eph";
 const TEMPLATE = "modules/header-buttons-overflow-eph/templates/ustawienia.hbs";
 
-const DOMYSLNE = {
-  aktorzy: {
-    przyciski: "10",
-    zamknij: "1"
-  },
-  przedmioty: {
-    przyciski: "10",
-    zamknij: "1"
-  }
-};
 
 export class HBO_SettingsForm extends foundry.applications.api.HandlebarsApplicationMixin(
   foundry.applications.api.ApplicationV2
@@ -79,13 +69,6 @@ export class HBO_SettingsForm extends foundry.applications.api.HandlebarsApplica
   }
 }
 
-Hooks.once("init", () => {
-  game.settings.register(NS, "przyciski", {
-    scope: "world",
-    config: false,
-    type: Object,
-    default: foundry.utils.deepClone(DOMYSLNE)
-  });
 
   game.settings.registerMenu(NS, "przyciskiMenu", {
     name: game.i18n.localize("hbo.ustawieniaHBO"),
@@ -95,7 +78,7 @@ Hooks.once("init", () => {
     type: HBO_SettingsForm,
     restricted: true
   });
-});
+
 
 export function otworzUstawieniaHBO() {
   new HBO_SettingsForm().render(true);

@@ -12,5 +12,8 @@
   "hbo.i": "et",
   "hbo.ustawieniaHBO": "Paramètres des boutons d’en-tête",
   "hbo.ustawieniaPodpowiedz": "Choisis comment les boutons d’en-tête des acteurs et objets doivent être affichés",
-  "hbo.odswiezOkna": "Les changements seront visibles après la réouverture des fenêtres"
+  "hbo.odswiezOkna": "Les changements seront visibles après la réouverture des fenêtres",
+  "hbo.System": "Système",
+  "hbo.modulWylaczony": "MODULE DÉSACTIVÉ",
+  "hbo.modulWylaczony2": "le module ne fonctionne pas sur ce système. Vous pouvez le désactiver complètement."
 }
