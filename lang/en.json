@@ -1,0 +1,16 @@
+{
+  "hbo.aktorzy": "Actors",
+  "hbo.przedmioty": "Items",
+  "hbo.przyciskiNaglowka": "Header buttons",
+  "hbo.przyciskZamknij": "Close button",
+  "hbo.zamknij": "Close",
+  "hbo.pelnyPrzycisk": "full button",
+  "hbo.pelnePrzyciski": "full buttons",
+  "hbo.ikona": "icon",
+  "hbo.ikony": "icons",
+  "hbo.listaHBO": "HBO list",
+  "hbo.i": "and",
+  "hbo.ustawieniaHBO": "Header Buttons Settings",
+  "hbo.ustawieniaPodpowiedz": "Choose how header buttons for actors and items should be displayed",
+  "hbo.odswiezOkna": "Changes will be visible after reopening the windows"
+}

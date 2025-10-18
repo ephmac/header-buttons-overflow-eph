@@ -1,0 +1,16 @@
+{
+  "hbo.aktorzy": "Acteurs",
+  "hbo.przedmioty": "Objets",
+  "hbo.przyciskiNaglowka": "Boutons d’en-tête",
+  "hbo.przyciskZamknij": "Bouton de fermeture",
+  "hbo.zamknij": "Fermer",
+  "hbo.pelnyPrzycisk": "bouton complet",
+  "hbo.pelnePrzyciski": "boutons complets",
+  "hbo.ikona": "icône",
+  "hbo.ikony": "icônes",
+  "hbo.listaHBO": "liste HBO",
+  "hbo.i": "et",
+  "hbo.ustawieniaHBO": "Paramètres des boutons d’en-tête",
+  "hbo.ustawieniaPodpowiedz": "Choisis comment les boutons d’en-tête des acteurs et objets doivent être affichés",
+  "hbo.odswiezOkna": "Les changements seront visibles après la réouverture des fenêtres"
+}
