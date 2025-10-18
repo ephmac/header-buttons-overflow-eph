@@ -1,0 +1,34 @@
+.hbo_linia {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  align-items: center;
+  gap: 20px;
+}
+.hbo_linia input[type="checkbox"] {
+  justify-self: center;
+}
+.hbo_linia select {
+  text-align-last: center;
+  text-align: center;
+}
+.hbo_kategoria {
+  font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #999;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.hbo_przyciskiUstawienia {
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  gap: 2px;
+  margin-top: 14px;
+}
+.hbo_przyciskiUstawienia .hbo_przyciskZamknij,
+.hbo_przyciskiUstawienia .hbo_przyciskWsparcie {
+  min-height: 34px;
+  line-height: 32px;
+  border-radius: 8px;
+}

@@ -1,0 +1,47 @@
+<form>
+  <!-- AKTORZY -->
+  <div class="hbo_kategoria">{{localize "hbo.aktorzy"}}</div>
+
+  <div class="hbo_linia">
+    <div><i class="fa-solid fa-puzzle-piece"></i> {{localize "hbo.przyciskiNaglowka"}}</div>
+    <select name="aktorzy.przyciski">
+      {{selectOptions choices.przyciski selected=ustawienia.aktorzy.przyciski}}
+    </select>
+  </div>
+
+  <div class="hbo_linia">
+    <div><i class="fa-solid fa-xmark"></i> {{localize "hbo.przyciskZamknij"}}</div>
+    <select name="aktorzy.zamknij">
+      {{selectOptions choices.zamknij selected=ustawienia.aktorzy.zamknij}}
+    </select>
+  </div>
+
+  <hr>
+
+  <!-- PRZEDMIOTY -->
+  <div class="hbo_kategoria">{{localize "hbo.przedmioty"}}</div>
+
+  <div class="hbo_linia">
+    <div><i class="fa-solid fa-puzzle-piece"></i> {{localize "hbo.przyciskiNaglowka"}}</div>
+    <select name="przedmioty.przyciski">
+      {{selectOptions choices.przyciski selected=ustawienia.przedmioty.przyciski}}
+    </select>
+  </div>
+
+  <div class="hbo_linia">
+    <div><i class="fa-solid fa-xmark"></i> {{localize "hbo.przyciskZamknij"}}</div>
+    <select name="przedmioty.zamknij">
+      {{selectOptions choices.zamknij selected=ustawienia.przedmioty.zamknij}}
+    </select>
+  </div>
+
+  <hr>
+    <div class="hint">{{localize "hbo.odswiezOkna"}}</div>
+  <hr>
+
+  <!-- Przyciski dolne -->
+  <div class="hbo_przyciskiUstawienia">
+    <button type="button" class="hbo_przyciskZamknij">{{localize "hbo.zamknij"}}</button>
+    <button type="button" class="hbo_przyciskWsparcie">🧡</button>
+  </div>
+</form>
