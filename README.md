@@ -3,6 +3,8 @@
 A **Foundry VTT** module that lets you customize how header buttons are displayed on **actors** and **items**.  
 It allows you to reduce buttons to icons only, or hide them completely by moving them into a collapsible **HBO (Header Buttons Overflow)** list.
 
+![Picture](./media/picture.jpg)
+
 ## 🎯 Features
 
 - **Icon Mode** – replaces header buttons with icons only (the button’s name appears as a tooltip on hover).  
